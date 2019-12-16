@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/css/froala_blocks.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.pkgd.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_style.min.css"> -->
+</head>
+<body>
+<header data-block-type="headers" data-id="2">
+  <div class="container">
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#">
+        <img src="/static/valval_logo.png" height="30" alt="image">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav3">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://taojy123.github.io/valval">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/taojy123/valval/tree/master/example">Examples</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/taojy123/valval">Github</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="fdb-block py-0" data-block-type="features">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-12 text-center">
+        <h1>Valval</h1>
+        <h2>The fastest web framework in V language</h2>
+      </div>
+
+      <div class="container py-5 my-5" style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs/shapes/10.svg);">
+        <div class="row text-left py-5">
+          <div class="col-12 col-sm-11 m-auto ml-md-5 col-md-9 col-lg-6">
+            <div class="fdb-box" style="background-color: #eeeeee; padding: 20px 5px;">
+              <div class="row justify-content-center" style="margin: 0;">
+<pre>
+import valval
+
+fn hello(req valval.Request) valval.Response {
+    return valval.response_ok('hello world')
+}
+
+fn main() {
+    mut app := valval.new_app(true)
+    app.register('/', hello)
+    valval.runserver(app, 8012)
+}</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="col-12 text-center">
+        <h3>You can develop a website fast and run it fast!</h3>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="fdb-block py-0" data-block-type="features">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-8 col-xl-7">
+          
+        <p class="lead">Valval used a whole new idea to implement the template functions, that's using <a href="https://github.com/vuejs/vue" target="_blank">Vue</a>.</p>
+        <p class="lead">Has the following advantages:</p class="lead">
+
+        <div class="row pt-1">
+            <div class="col-12 col-md-6">
+              <p>You don't need to spend time learning how to use templates, if you have used `Vue` before.</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <p>If you haven't used `Vue`, you also can learn it fast, because it's so easy.</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <p>It can integrate some commonly used UI frameworks, such as: `element`, `mint`, `vant`, `antd`, `bootstrap`...</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <p>I don't need to spend time developing built-in templates 😁.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 m-auto mr-lg-0 ml-lg-auto pt-5 pt-lg-0">
+        <img alt="image" class="img-fluid" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs/draws/scrum.svg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fdb-block py-0">
+    <div class="container py-5 my-5" style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs/shapes/2.svg);">
+      <div class="row justify-content-center py-5">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+          <div class="fdb-box">
+            <h2>Start using it now</h2>
+            
+            <div class="row text-center justify-content-center mt-5">
+
+                <div class="col-12 col-sm-4 col-xl-3 m-md-auto" style="cursor: pointer;" onclick="top.location='https://taojy123.github.io/valval'">
+                  <img alt="image" class="fdb-icon" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs/icons/layers.svg">
+                  <p class="lead">Documentation</p>
+                </div>
+          
+                <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0" style="cursor: pointer;" onclick="top.location='https://github.com/taojy123/valval/tree/master/example'">
+                  <img alt="image" class="fdb-icon" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs/icons/gift.svg">
+                  <p class="lead">Examples</p>
+                </div>
+          
+                <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0" style="cursor: pointer;" onclick="top.location='https://github.com/taojy123/valval'">
+                  <img alt="image" class="fdb-icon" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs/icons/cloud.svg">
+                  <p class="lead">Github</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="fdb-block footer-small fp-active" data-block-type="footers" data-id="6">
+  <div class="container">
+    <div class="row text-center align-items-center">
+      <div class="col-12 col-sm-6 col-md-4 text-sm-left">
+        <img alt="image" src="/static/valval_logo.png" height="40">
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mt-4 mt-sm-0 text-center text-sm-right text-md-center">
+          <span style="color: gray;">valval framework</span>
+      </div>
+
+      <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+        <span style="color: gray;">@taojy123</span>
+      </div>
+    </div>
+  </div>
+</footer>
+     
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+<!-- <audio controls="controls" style="display: none;"></audio> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/js/froala_editor.pkgd.min.js"></script> -->
+<!-- <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script> -->
+<!-- <script src="http://cdn.tslow.cn/AthenaTools/static/js/fontawesome_all.js"></script> -->
+
+    
+</body>
+</html>
